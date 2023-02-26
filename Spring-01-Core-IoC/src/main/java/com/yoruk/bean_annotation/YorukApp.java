@@ -5,7 +5,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class YorukApp {
     public static void main(String[] args) {
-        ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class);
+        ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class,ConfigAny.class);
+
+        container.getBean(FullTimeMentor.class);
 
 
     }
