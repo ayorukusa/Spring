@@ -7,8 +7,12 @@ public class YorukApp {
     public static void main(String[] args) {
         ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class,ConfigAny.class);
 
-        container.getBean(FullTimeMentor.class);
+       FullTimeMentor ft=  container.getBean(FullTimeMentor.class);
 
+        ft.createAccount();
+
+       String str = container.getBean(String.class);
+        System.out.println(str);
 
     }
 }
