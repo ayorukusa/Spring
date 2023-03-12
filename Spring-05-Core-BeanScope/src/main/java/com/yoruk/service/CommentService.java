@@ -4,12 +4,14 @@ import com.yoruk.model.Comment;
 import com.yoruk.proxy.CommentNotificationProxy;
 import com.yoruk.repository.CommentRepository;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 //@Scope("prototype")
-@Scope(BeanDefinition.SCOPE_PROTOTYPE)
+//@Scope(BeanDefinition.SCOPE_PROTOTYPE)
+@Lazy
 public class CommentService {
     private final CommentRepository commentRepository;
     private final CommentNotificationProxy commentNotificationProxy;
