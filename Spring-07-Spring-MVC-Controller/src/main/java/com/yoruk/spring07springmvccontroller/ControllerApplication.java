@@ -1,13 +1,13 @@
-package com.yoruk;
+package com.yoruk.spring07springmvccontroller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring06SpringBootDemoApplication {
+public class ControllerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring06SpringBootDemoApplication.class, args);
+        SpringApplication.run(ControllerApplication.class, args);
     }
 
 }
